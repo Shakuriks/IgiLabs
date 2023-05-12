@@ -103,3 +103,11 @@ def average_word_length(text):
     words = word_list(text)
     average_length = sum(map(len, words)) / len(words)
     return average_length
+
+def average_sentence_length(sentences):
+    average_length = 0
+    for sentence in sentences:
+        words = word_list(sentence)
+        average_length += sum(map(len, words))
+    average_length = average_length / len(sentences)
+    return average_length
