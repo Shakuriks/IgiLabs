@@ -1,4 +1,4 @@
-import parser
+import parser1
 
 text = input('Enter the text:\n')
 
@@ -18,12 +18,12 @@ while True:
     else:
         print('Error. Enter an integer value.')
 
-sentences = parser.sentences_split(text)
-sentences_amount = parser.sentences_amount(sentences)
-non_declarative_sentences_amount = parser.non_declarative_sentences_amount(sentences)
-average_sentences_length = parser.average_sentence_length(sentences)
-average_word_length = parser.average_word_length(text)
-n_grams = parser.top_n_grams(k, n, sentences)
+sentences = parser1.sentences_split(text)
+sentences_amount = parser1.sentences_amount(sentences)
+non_declarative_sentences_amount = parser1.non_declarative_sentences_amount(sentences)
+average_sentences_length = parser1.average_sentence_length(sentences)
+average_word_length = parser1.average_word_length(text)
+n_grams = parser1.top_n_grams(k, n, sentences)
 
 print('Amount of sentences: ', sentences_amount)
 print('Amount of non-declarative sentences: ', non_declarative_sentences_amount)
