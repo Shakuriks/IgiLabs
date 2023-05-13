@@ -111,3 +111,32 @@ def average_sentence_length(sentences):
         average_length += sum(map(len, words))
     average_length = average_length / len(sentences)
     return average_length
+
+def n_grams_check(n, sentences):
+    n_grams = []
+    for sentence in sentences:
+        words = re.findall(r'\b[\w\']+\b', sentence)
+        n_grams.extend([tuple(words[i:i + n]) for i in range(len(words) - n + 1)])
+
+    n_gram_freq = {}
+    for gram in n_grams:
+        if str(gram).lower() in n_gram_freq:
+            n_gram_freq[str(gram).lower()] += 1
+        else:
+            n_gram_freq[str(gram).lower()] = 1
+
+    return n_gram_freq
+
+
+def n_grams_sort(n_gram_freq):
+    sorted_n_grams = {}
+    sorted_strings_by_counts = sorted(n_gram_freq, key=n_gram_freq.get, reverse=True)
+    for string in sorted_strings_by_counts:
+        sorted_n_grams[string] = n_gram_freq[string]
+    return sorted_n_grams
+
+
+def top_n_grams(k, n, sentences):
+    n_gram_freq = n_grams_check(n, sentences)
+    n_gram_freq = n_grams_sort(n_gram_freq)
+    return dict(list(n_gram_freq.items())[:k])
