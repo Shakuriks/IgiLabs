@@ -1,4 +1,5 @@
-
+import re
+import pickle
 
 
 class Container:
@@ -30,3 +31,39 @@ class Container:
             print('Items found: ', ', '.join(found_keys))
         else:
             print('No such elements.')
+
+    def list(self):
+        if self.container:
+            print('All elements in the container:')
+            for element in self.container:
+                print(element)
+        else:
+            print('Container is empty.')
+
+    def grep(self, regex, ignor_case=False):
+        if ignor_case:
+            pattern = re.compile(regex, re.IGNORECASE)
+        else:
+            pattern = re.compile(regex)
+
+        matches = [key for key in self.container if re.search(pattern, key)]
+
+        if matches:
+            print('Matches found:')
+            for element in matches:
+                print(element)
+        else:
+            print('No such elements.')
+
+    def save(self):
+        with open(self.filename, 'wb') as file:
+            pickle.dump(self.container, file)
+        print('Container save to ', self.filename)     
+
+    def load(self):
+        try:
+            with open(self.filename, 'rb') as file:
+                self.container = pickle.load(file)
+            print(self.username, '\'s container loaded.')
+        except FileNotFoundError:
+            print('No saved container for ', self.username)   
