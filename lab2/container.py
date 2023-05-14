@@ -58,7 +58,7 @@ class Container:
     def save(self):
         with open(self.filename, 'wb') as file:
             pickle.dump(self.container, file)
-        print('Container save to ', self.filename)     
+        print('Container saved to ', self.filename)     
 
     def load(self):
         try:
@@ -67,3 +67,38 @@ class Container:
             print(self.username, '\'s container loaded.')
         except FileNotFoundError:
             print('No saved container for ', self.username)   
+
+    def username_check(self, username):
+        if username in self.users.keys():
+            return True
+        else:
+            return False
+        
+    def new_user(self, username):
+        if not self.username_check(username):
+            self.users[username] = set()
+            self.container = self.users[username]
+            self.username = username
+            self.filename = f'{username}.dat'
+            print(f'Container of user {username} has been successfully loaded.')
+
+    def switch(self, username):
+        if not re.findall(r'\b[A-z]\w+\b', username):
+            print('Incorrect name.')
+            return
+
+        if self.username_check(username):
+            self.container = self.users[username]
+            self.username = username
+            self.filename = f'{username}.dat'
+            print(f'Container of user {username} has been successfully loaded.')
+        else:
+            print('This user does not exist. Would you like to create one? (y/n):')
+            while True:
+                answer = input('> ')
+                if answer == 'y' or answer == 'Y':
+                    self.new_user(username)
+                    break
+                elif answer == 'n' or answer == 'N':
+                    print(f'Staying in the container {self. username}.')
+                    break
