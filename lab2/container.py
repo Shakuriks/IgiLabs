@@ -88,10 +88,18 @@ class Container:
             return
 
         if self.username_check(username):
-            self.container = self.users[username]
+            print('Load? (y/n):')
+            while True:
+                answer = input('> ')
+                if answer == 'y' or answer == 'Y':
+                    self.container = self.users[username]
+                    print(f'Container of user {username} has been successfully loaded.')
+                    break
+                elif answer == 'n' or answer == 'N':
+                    self.container = set()
+                    break
             self.username = username
             self.filename = f'{username}.dat'
-            print(f'Container of user {username} has been successfully loaded.')
         else:
             print('This user does not exist. Would you like to create one? (y/n):')
             while True:

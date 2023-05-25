@@ -53,7 +53,7 @@ def sentences_split(text):
     while i < len(sentences) - 1:
         for abbreviation in abbreviations:
             if re.search(r'\b' + abbreviation + r'\. *$', sentences[i],
-                         re.IGNORECASE):  # and sentences[i + 1][0].isalpha()
+                         re.IGNORECASE):  
                 sentences[i] = sentences[i] + ' ' + sentences[i + 1]
                 del sentences[i + 1]
                 i = i - 1

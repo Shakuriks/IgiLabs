@@ -24,9 +24,9 @@ def test_sentences_amount_1():
 
 
 def test_non_declarative_sentences_amount_1():
-    sent = parser1.sentences_split('Smth!.. Smth... Smth. Smth?.. Smth! Smth smth smth.')
+    sent = parser1.sentences_split('Smth!.. Smth... Smth. Smth?.. Smth! Smth smth smth. "Test..."')
     res = parser1.non_declarative_sentences_amount(sent)
-    assert res == 3
+    assert res == 4
 
 
 def test_average_sentence_length_1():
