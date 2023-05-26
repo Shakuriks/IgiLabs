@@ -1,8 +1,8 @@
 import re
 import regex
-from serializer import Serializer
-from packing_tool import PackingTool
-from consts import nonetype
+from serializers.serializer import Serializer
+from serializers.packing_tool import PackingTool
+from serializers.consts import nonetype
 
 
 class Json(Serializer):
