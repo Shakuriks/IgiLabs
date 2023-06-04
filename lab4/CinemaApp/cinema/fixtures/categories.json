@@ -1,0 +1,1 @@
+[{"model": "cinema.filmcategory", "pk": 2, "fields": {"name": "18+", "number": 18}}, {"model": "cinema.filmcategory", "pk": 3, "fields": {"name": "16+", "number": 16}}, {"model": "cinema.filmcategory", "pk": 4, "fields": {"name": "14+", "number": 14}}, {"model": "cinema.filmcategory", "pk": 5, "fields": {"name": "12+", "number": 12}}]

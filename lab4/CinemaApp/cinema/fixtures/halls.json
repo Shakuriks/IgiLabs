@@ -1,0 +1,1 @@
+[{"model": "cinema.hall", "pk": 1, "fields": {"number": 1, "rows": 30, "seats_in_a_row": 30}}, {"model": "cinema.hall", "pk": 2, "fields": {"number": 2, "rows": 20, "seats_in_a_row": 30}}, {"model": "cinema.hall", "pk": 3, "fields": {"number": 3, "rows": 15, "seats_in_a_row": 20}}]

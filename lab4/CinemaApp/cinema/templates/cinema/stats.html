@@ -1,0 +1,23 @@
+{% extends 'cinema/base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+            <h1 class="mt-5">DomusCinema</h1>
+
+            {% for film in films %}
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card" style="height: 13rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ film.name }}</h5>
+                                <h6>Количество сеансов: {{ film.sessions_count }}</h6>
+                                <h6>Продано билетов: {{ film.total_tickets_sold }}</h6>
+                                <h6>Средняя цена за билет: {{ film.avg_price }} руб</h6>
+                                <h6>Сумма продаж: {{ film.total_price }} руб</h6>
+                            </div>
+                        </div>
+                    </div>
+            {% endfor %}
+    </div>
+</div>
+{% endblock %}

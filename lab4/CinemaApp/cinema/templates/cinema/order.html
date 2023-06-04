@@ -1,0 +1,63 @@
+{% extends 'cinema/base.html' %}
+{% load custom_tags %}
+{% block scripts %}
+
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <h1 class="mt-5">DomusCinema</h1>
+
+
+            <form method="POST" id="myForm" action="{% url 'cinema:order' session.id %}">
+                {% csrf_token %}
+                {% for row in rows %}
+                    <h3>Ряд {{ row }}</h3>
+                  {% for seat in seats_in_a_row  %}
+                    {% with is_available=True %}
+                        {% for un_seat in unavailable_seats %}
+                        {% if un_seat.row == row and un_seat.seat_in_a_row == seat %}
+                            {% with is_available=False %}
+                            {% endwith %}
+                        {% endif %}
+                        {% endfor %}
+                        <input type="checkbox" id="seatCheckbox" name="selected_seats" value="{{ row }} {{ seat }}" 
+                            {% if not is_available %}disabled{% endif %}>
+                        <label>{{ seat }}</label>
+                    {% endwith %}
+                  {% endfor %}
+                  <br><br>
+                {% endfor %}
+                <button type="submit" onclick="sendData()">Заказать</button>
+              </form>
+
+              <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+              <script>
+                  function sendData() {
+                      var checkbox = document.getElementById('seatCheckbox');
+                      if (checkbox.checked) {
+                          
+                          // Отправка AJAX-запроса
+                          $.ajax({
+                              url: '{% url 'cinema:order' session.id %}',
+                              type: 'POST',
+                              success: function(response) {
+                                  // Обработка успешного ответа от сервера
+                                  console.log(response);
+                              },
+                              error: function(xhr, status, error) {
+                                  // Обработка ошибки AJAX-запроса
+                                  console.log(xhr.responseText);
+                              }
+                          });
+                      } else {
+                          alert('Пожалуйста, выберите место!');
+                      }
+                  }
+              </script>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

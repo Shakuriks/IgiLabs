@@ -1,0 +1,74 @@
+{% extends 'cinema/base.html' %}
+
+{% block content %}
+    <section>
+        <!--    <div class="alert alert-light text-center" role="alert">-->
+        <!--        Информационное сообщение-->
+        <!--    </div>-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="mt-5">DomusCinema</h1>
+
+                    <div class="col-lg-3">
+                        <div class="list-group">
+                            {% for category in categories %}
+                                <a href="{% url 'cinema:index' category.id %}" class="list-group-item">
+                                    {{ category.name }}
+                                </a>
+                            {% endfor %}
+                            <a href="{% url 'cinema:index' %}" class="list-group-item">
+                                Все категории
+                            </a>
+                        </div>   
+        
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <form method="GET" action="{% url 'cinema:index' %}">
+                    <select name="sort">
+                        <option value="release">Год</option>
+                        <option value="rating">Рейтинг</option>
+                    </select>
+                    <button type="submit">Применить</button>
+                </form>
+                <a href="{% url 'cinema:index' %}?reset=true">Сбросить фильтр</a>
+                <form method="GET" action="{% url 'cinema:index' %}">
+                    {{ form.search_query }}
+                    <button type="submit">Поиск</button>
+                </form>
+                {% for film in films %}
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card" style="height: 40rem;">
+                            <a href="{% url 'cinema:sessions' film.id %}">
+                                <img class="card-img-top"
+                                     style="height: 27rem"
+                                     src="{{ film.poster }}"
+                                     alt="">
+                            </a>
+                            <div class="card-body">
+                                <h2 class="card-title">{{ film.name }}</h2>
+                                <h8>{{film.release}} год</h8>
+                                {% for category in categories %}
+                                    {% if category == film.category %}
+                                        <h6>{{ category.name }}</h6>
+                                    {% endif %}
+                                {%endfor%}
+                                <h6>Рейтинг: {{ film.rating }}</h6>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a class="btn btn-outline-success"
+                                   href="{% url 'cinema:sessions' film.id %}">
+                                    Перейти к сеансам
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </section>
+{% endblock %}

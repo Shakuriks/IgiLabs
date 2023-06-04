@@ -1,0 +1,25 @@
+{% extends 'cinema/base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+            <h1 class="mt-5">DomusCinema</h1>
+
+    {% for ticket in tickets %}
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card" style="height: 15rem;">
+                <div class="card-body">
+                        <h2 class="card-title">{{ ticket.session.movie.name }}</h2>
+                        <h4>Дата: {{ ticket.session.date }}</h4>
+                        <h4>Время: {{ ticket.session.time }}</h4>
+                        <h5>Ряд: {{ ticket.seat.row }}</h5>
+                        <h5>Место: {{ ticket.seat.seat_in_a_row }}</h5>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+</div>
+</div>
+</div>
+{% endblock %}

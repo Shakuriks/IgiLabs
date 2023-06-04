@@ -1,0 +1,83 @@
+{% extends 'cinema/base.html' %}
+
+{% block scripts %}
+<script src="https://apis.google.com/js/client.js?onload=init"></script>
+<script>
+  // Инициализация YouTube API
+  function init() {
+    gapi.client.setApiKey({{YOUTUBE_DATA_API_KEY}}); // Замените YOUR_API_KEY на ваш API-ключ
+    gapi.client.load('youtube', 'v3', function() {
+      // API загружено
+    });
+  }
+</script>
+<script>
+  // 2. This code loads the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // 3. This function creates an <iframe> (and YouTube player)
+  //    after the API code downloads.
+  var player;
+
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '360',
+      width: '640',
+      videoId: '{{treiler_id}}',
+    });
+  }
+
+  // 5. The API calls this function when the player's state changes.
+  //    The function indicates that when playing a video (state=1),
+  //    the player should play for six seconds and then stop.
+</script>
+
+
+{% endblock %}
+
+{% block content %}
+    <section>
+        <!--    <div class="alert alert-light text-center" role="alert">-->
+        <!--        Информационное сообщение-->
+        <!--    </div>-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="mt-5">{{ film.name }}</h1>
+                    <h6>{{film.description}}</h6>
+                </div>
+            </div>
+
+            <div id="player"></div>
+
+            <div class="row">
+
+                {% for session in sessions %}
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card" style="height: 13rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ session.date }}</h5>
+                                <h6>{{ session.time }}</h6>
+                                <h6>Зал:{{ session.hall.number }}</h6>
+                                <h6>{{ session.price }} руб</h6>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a class="btn btn-outline-success"
+                                   href="{% url 'cinema:order' session.id %}">
+                                    Заказать билеты
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div id="player-container"></div>
+
+        </div>
+    </section>
+{% endblock %}
