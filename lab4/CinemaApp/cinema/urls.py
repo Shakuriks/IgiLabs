@@ -9,4 +9,5 @@ urlpatterns = [
     path('sessions/<int:film_id>/', views.sessions,name='sessions'),
     path('order/<int:session_id>/', views.order,name='order'),
     path('stats/', views.stats,name='stats'),
+    path('edit/', views.edit,name='edit'),
 ]

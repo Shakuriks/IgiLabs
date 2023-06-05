@@ -107,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'ru-ru'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Minsk'
 
 USE_I18N = True
 
@@ -144,5 +144,7 @@ LOGIN_URL = '/users/login/'
 
 # Redirect to home URL after login
 LOGIN_REDIRECT_URL = '/'
+
+DATE_INPUT_FORMATS = ['%d-%m-%Y']
 
 

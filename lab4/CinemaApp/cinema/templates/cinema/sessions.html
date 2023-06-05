@@ -66,10 +66,12 @@
                                 <h6>{{ session.price }} руб</h6>
                             </div>
                             <div class="card-footer text-center">
+                                {% if  session_exist  %}
                                 <a class="btn btn-outline-success"
                                    href="{% url 'cinema:order' session.id %}">
                                     Заказать билеты
                                 </a>
+                                {% endif %}
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,17 @@
+{% extends 'cinema/base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+            <h1 class="mt-5">DomusCinema</h1>
+            <form method="POST" action="{% url 'cinema:edit' %}">
+                {% csrf_token %}
+                {{ form.edit_name }}
+                {{ form.edit_category }}
+                <div class="form-group mt-4 mb-0">
+                    <input class="btn btn-primary btn-block" type="submit" value="Добавить фильм">
+                </div>
+            </form>
+    </div>    
+</div>
+{% endblock %}            

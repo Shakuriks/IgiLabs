@@ -1,9 +1,10 @@
 from django.shortcuts import render, HttpResponseRedirect
-from cinema.models import Film, FilmCategory, Session, Seat, Ticket
+from cinema.models import Film, FilmCategory, Session, Seat, Ticket, Hall
 import requests
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
-from .forms import FilmSearchForm
+from .forms import FilmSearchForm, FilmForm, SessionForm
+from CinemaApp.admin_api import update_model_from_admin
 
 # Create your views here.
 def index(request, category_id=0):
@@ -42,13 +43,20 @@ def index(request, category_id=0):
 def sessions(request, film_id):
     film = Film.objects.get(id=film_id)
     sessions = Session.objects.filter(movie=film).order_by('date', 'time')
+    for session in sessions:
+        if not session.check_session_date():
+            session.delete()
     treiler_id = film.get_treiler_id()
+    session_exist = True
+    if Session.objects.filter(movie=film).count() == 0:
+        session_exist = False
     
     context = {
         'title': 'Mycinema - Сеансы',
         'sessions': sessions,
         'film': film,
         'treiler_id': treiler_id,
+        'session_exist': session_exist
     }
     return render(request, 'cinema/sessions.html', context)
 
@@ -95,5 +103,26 @@ def stats(request):
         'films': films,
     }
     return render(request, 'cinema/stats.html', context)
+
+def edit(request):
+    if request.method == 'POST':
+        form = FilmForm(request.POST)
+        name = form.data['edit_name']
+        category_number = form.data['edit_category']
+        category = FilmCategory.objects.all()[int(category_number)-1]
+        Film.objects.create(name = name, is_empty = True, category = category)
+        Film.objects.get_all_empty_movies()
+        return HttpResponseRedirect('/')  # Перенаправление на страницу со списком фильмов
+    else:
+        form = FilmForm()
+        
+    context = {
+        'title': 'Mycinema - Добавление',
+        'form': form,
+    }    
+
+
+    return render(request, 'cinema/edit.html', context)
+
 
     

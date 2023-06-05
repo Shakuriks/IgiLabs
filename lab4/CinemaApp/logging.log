@@ -1,0 +1,741 @@
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%9C%D0%B0%D1%82%D1%80%D0%B8%D1%86%D0%B0&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:YihPA42fdQ8
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py changed, reloading.
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%92%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D0%BB%D0%B8%D0%BD+%D0%BA%D0%BE%D0%BB%D0%B5%D1%86%3A+%D0%94%D0%B2%D0%B5+%D0%BA%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82%D0%B8&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:n8EaedqFfuU
+ERROR:django.request:Internal Server Error: /sessions/4/
+Traceback (most recent call last):
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/views.py", line 56, in sessions
+    return render(request, 'cinema/sessions.html', context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'order' with arguments '(None,)' not found. 1 pattern(s) tried: ['order/(?P<session_id>[0-9]+)/\\Z']
+INFO:django.utils.autoreload:/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/views.py changed, reloading.
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%92%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D0%BB%D0%B8%D0%BD+%D0%BA%D0%BE%D0%BB%D0%B5%D1%86%3A+%D0%94%D0%B2%D0%B5+%D0%BA%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82%D0%B8&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:n8EaedqFfuU
+ERROR:django.request:Internal Server Error: /sessions/4/
+Traceback (most recent call last):
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+KeyError: '{{'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/views.py", line 60, in sessions
+    return render(request, 'cinema/sessions.html', context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 952, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 885, in __init__
+    super().__init__(*args, **kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/smartif.py", line 181, in translate_token
+    return self.create_var(token)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 888, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{{' from '{{'
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%92%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D0%BB%D0%B8%D0%BD+%D0%BA%D0%BE%D0%BB%D0%B5%D1%86%3A+%D0%94%D0%B2%D0%B5+%D0%BA%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82%D0%B8&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:n8EaedqFfuU
+ERROR:django.request:Internal Server Error: /sessions/4/
+Traceback (most recent call last):
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+KeyError: '{{'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/views.py", line 60, in sessions
+    return render(request, 'cinema/sessions.html', context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 952, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 885, in __init__
+    super().__init__(*args, **kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/smartif.py", line 181, in translate_token
+    return self.create_var(token)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 888, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{{' from '{{'
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%92%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D0%BB%D0%B8%D0%BD+%D0%BA%D0%BE%D0%BB%D0%B5%D1%86%3A+%D0%94%D0%B2%D0%B5+%D0%BA%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82%D0%B8&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:n8EaedqFfuU
+ERROR:django.request:Internal Server Error: /sessions/4/
+Traceback (most recent call last):
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+KeyError: '{{'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/views.py", line 60, in sessions
+    return render(request, 'cinema/sessions.html', context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 952, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 885, in __init__
+    super().__init__(*args, **kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/smartif.py", line 181, in translate_token
+    return self.create_var(token)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 888, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{{' from '{{'
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%92%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D0%BB%D0%B8%D0%BD+%D0%BA%D0%BE%D0%BB%D0%B5%D1%86%3A+%D0%94%D0%B2%D0%B5+%D0%BA%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82%D0%B8&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:n8EaedqFfuU
+WARNING:django.request:Not Found: /favicon.ico
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%94%D0%B6%D0%BE%D0%BD+%D0%A3%D0%B8%D0%BA+4&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:hDxoip1UFGM
+ERROR:django.request:Internal Server Error: /sessions/3/
+Traceback (most recent call last):
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/views.py", line 60, in sessions
+    return render(request, 'cinema/sessions.html', context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'order' with arguments '(None,)' not found. 1 pattern(s) tried: ['order/(?P<session_id>[0-9]+)/\\Z']
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%94%D0%B6%D0%BE%D0%BD+%D0%A3%D0%B8%D0%BA+4&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:hDxoip1UFGM
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%94%D0%B6%D0%BE%D0%BD+%D0%A3%D0%B8%D0%BA+4&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:hDxoip1UFGM
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%9C%D0%B0%D1%82%D1%80%D0%B8%D1%86%D0%B0&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:YihPA42fdQ8
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%94%D0%B6%D0%BE%D0%BD+%D0%A3%D0%B8%D0%BA+3&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:x2db3fR1fBs
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%94%D0%B6%D0%BE%D0%BD+%D0%A3%D0%B8%D0%BA+4&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:hDxoip1UFGM
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%A4%D0%BE%D1%80%D1%81%D0%B0%D0%B6+5&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:M9QmNpOegZQ
+ERROR:django.request:Internal Server Error: /sessions/7/
+Traceback (most recent call last):
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/views.py", line 60, in sessions
+    return render(request, 'cinema/sessions.html', context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'order' with arguments '(None,)' not found. 1 pattern(s) tried: ['order/(?P<session_id>[0-9]+)/\\Z']
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%A4%D0%BE%D1%80%D1%81%D0%B0%D0%B6+5&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:M9QmNpOegZQ
+INFO:django.utils.autoreload:/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py changed, reloading.
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%97%D0%B5%D0%BB%D0%B5%D0%BD%D0%B0%D1%8F+%D0%BC%D0%B8%D0%BB%D1%8F&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:TODt_q-_4C4
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%97%D0%B5%D0%BB%D0%B5%D0%BD%D0%B0%D1%8F+%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:e6b9urtUJt0
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%9C%D0%B0%D1%82%D1%80%D0%B8%D1%86%D0%B0&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%9C%D0%B0%D1%82%D1%80%D0%B8%D1%86%D0%B0&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:YihPA42fdQ8
+DEBUG:root:YihPA42fdQ8
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/CinemaApp/settings.py changed, reloading.
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%9C%D0%B0%D1%82%D1%80%D0%B8%D1%86%D0%B0&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:YihPA42fdQ8
+INFO:django.utils.autoreload:/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/views.py changed, reloading.
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=aSas
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=aSas HTTP/1.1" 200 None
+DEBUG:root:https://image.tmdb.org/t/p/w500None
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+aSas&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:j_G0P6TcSUQ
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+aSas&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:x6FlVjfVqmg
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /edit/
+Traceback (most recent call last):
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/views.py", line 114, in edit
+    Film.objects.get_all_empty_movies()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py", line 23, in get_all_empty_movies
+    data = film.get_movie()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py", line 103, in get_movie
+    description = search_results['results'][0]['overview']
+IndexError: list index out of range
+INFO:django.utils.autoreload:/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py changed, reloading.
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /edit/
+Traceback (most recent call last):
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/views.py", line 114, in edit
+    Film.objects.get_all_empty_movies()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py", line 23, in get_all_empty_movies
+    data = film.get_movie()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py", line 103, in get_movie
+    if search_results.count() != 0:
+AttributeError: 'dict' object has no attribute 'count'
+INFO:django.utils.autoreload:/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py changed, reloading.
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /edit/
+Traceback (most recent call last):
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/views.py", line 114, in edit
+    Film.objects.get_all_empty_movies()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py", line 23, in get_all_empty_movies
+    data = film.get_movie()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py", line 104, in get_movie
+    description = search_results['results'][0]['overview']
+IndexError: list index out of range
+INFO:django.utils.autoreload:/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py changed, reloading.
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /edit/
+Traceback (most recent call last):
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/views.py", line 114, in edit
+    Film.objects.get_all_empty_movies()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py", line 23, in get_all_empty_movies
+    data = film.get_movie()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py", line 103, in get_movie
+    if search_results['results'].count() != 0:
+TypeError: list.count() takes exactly one argument (0 given)
+INFO:django.utils.autoreload:/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py changed, reloading.
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /edit/
+Traceback (most recent call last):
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/views.py", line 114, in edit
+    Film.objects.get_all_empty_movies()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py", line 24, in get_all_empty_movies
+    film.save_movie(data)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py", line 116, in save_movie
+    url = f'{base_url}{data[3]}'
+TypeError: 'NoneType' object is not subscriptable
+INFO:django.utils.autoreload:/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py changed, reloading.
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /edit/
+Traceback (most recent call last):
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/views.py", line 114, in edit
+    Film.objects.get_all_empty_movies()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py", line 24, in get_all_empty_movies
+    if data[4]:
+TypeError: 'NoneType' object is not subscriptable
+INFO:django.utils.autoreload:/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py changed, reloading.
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /edit/
+Traceback (most recent call last):
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/views.py", line 114, in edit
+    Film.objects.get_all_empty_movies()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py", line 24, in get_all_empty_movies
+    if data['failed']:
+TypeError: 'NoneType' object is not subscriptable
+INFO:django.utils.autoreload:/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py changed, reloading.
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls HTTP/1.1" 200 None
+ERROR:django.request:Internal Server Error: /edit/
+Traceback (most recent call last):
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/views.py", line 114, in edit
+    Film.objects.get_all_empty_movies()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py", line 24, in get_all_empty_movies
+    if data['failed']:
+TypeError: 'bool' object is not subscriptable
+INFO:django.utils.autoreload:/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py changed, reloading.
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls HTTP/1.1" 200 None
+DEBUG:root:https://image.tmdb.org/t/p/w500
+ERROR:django.request:Internal Server Error: /edit/
+Traceback (most recent call last):
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1741, in to_python
+    decimal_value = decimal.Decimal(value)
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/views.py", line 114, in edit
+    Film.objects.get_all_empty_movies()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py", line 25, in get_all_empty_movies
+    film.save_movie(data)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py", line 126, in save_movie
+    Film.objects.filter(id=self.id).update(
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1206, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1982, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1547, in execute_sql
+    sql, params = self.as_sql()
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1945, in as_sql
+    val = field.get_db_prep_save(val, connection=self.connection)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 954, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1758, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1767, in get_prep_value
+    return self.to_python(value)
+  File "/Users/LegonkovNikita/IgiLabs/lab4/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 1743, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['Значение “” должно быть десятичным числом.']
+INFO:django.utils.autoreload:/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py changed, reloading.
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls HTTP/1.1" 200 None
+DEBUG:root:https://image.tmdb.org/t/p/w500
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls HTTP/1.1" 200 None
+DEBUG:root:https://image.tmdb.org/t/p/w500
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls HTTP/1.1" 200 None
+DEBUG:root:https://image.tmdb.org/t/p/w500
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls HTTP/1.1" 200 None
+DEBUG:root:https://image.tmdb.org/t/p/w500
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls HTTP/1.1" 200 None
+DEBUG:root:https://image.tmdb.org/t/p/w500
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls HTTP/1.1" 200 None
+DEBUG:root:https://image.tmdb.org/t/p/w500
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls HTTP/1.1" 200 None
+DEBUG:root:https://image.tmdb.org/t/p/w500
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls HTTP/1.1" 200 None
+DEBUG:root:https://image.tmdb.org/t/p/w500
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls HTTP/1.1" 200 None
+DEBUG:root:https://image.tmdb.org/t/p/w500
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=alsd,lsad,slfls HTTP/1.1" 200 None
+DEBUG:root:https://image.tmdb.org/t/p/w500
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=qdmlsd,.dqsd
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=qdmlsd,.dqsd HTTP/1.1" 200 None
+DEBUG:root:https://image.tmdb.org/t/p/w500
+INFO:django.utils.autoreload:/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py changed, reloading.
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=d.f.sf.dsf.s.df
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=d.f.sf.dsf.s.df HTTP/1.1" 200 None
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=d.f.sf.dsf.s.df
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=d.f.sf.dsf.s.df HTTP/1.1" 200 None
+INFO:django.utils.autoreload:/Users/LegonkovNikita/IgiLabs/lab4/CinemaApp/cinema/models.py changed, reloading.
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%94%D0%B6%D0%BE%D0%BD+%D0%A3%D0%B8%D0%BA+3&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%94%D0%B6%D0%BE%D0%BD+%D0%A3%D0%B8%D0%BA+3&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:x2db3fR1fBs
+DEBUG:root:x2db3fR1fBs
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%94%D0%B6%D0%BE%D0%BD+%D0%A3%D0%B8%D0%BA+3&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:x2db3fR1fBs
+DEBUG:root:5
+DEBUG:root:10
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%94%D0%B6%D0%BE%D0%BD+%D0%A3%D0%B8%D0%BA+3&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:x2db3fR1fBs
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%9C%D0%B0%D1%82%D1%80%D0%B8%D1%86%D0%B0&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:YihPA42fdQ8
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%92%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D0%BB%D0%B8%D0%BD+%D0%BA%D0%BE%D0%BB%D0%B5%D1%86%3A+%D0%94%D0%B2%D0%B5+%D0%BA%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82%D0%B8&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:n8EaedqFfuU
+WARNING:django.request:Not Found: /favicon.ico
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%97%D0%B5%D0%BB%D0%B5%D0%BD%D0%B0%D1%8F+%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:e6b9urtUJt0
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%9C%D0%B0%D1%82%D1%80%D0%B8%D1%86%D0%B0&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:YihPA42fdQ8
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?q=%D0%A2%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80+%D0%9C%D0%B0%D1%82%D1%80%D0%B8%D1%86%D0%B0&part=id&maxResults=1&type=video&key=AIzaSyDoT4sTrUrRE5VAz-WnhSTVHOFAjJ1K-a4&alt=json
+DEBUG:root:YihPA42fdQ8
+DEBUG:root:https://api.themoviedb.org/3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=Побег из Шоушенка
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.themoviedb.org:443
+DEBUG:urllib3.connectionpool:https://api.themoviedb.org:443 "GET /3/search/movie?api_key=781b2289413b7be974e020b98d21ccaa&language=ru-RU&query=%D0%9F%D0%BE%D0%B1%D0%B5%D0%B3%20%D0%B8%D0%B7%20%D0%A8%D0%BE%D1%83%D1%88%D0%B5%D0%BD%D0%BA%D0%B0 HTTP/1.1" 200 None
+DEBUG:root:https://image.tmdb.org/t/p/w500/yvmKPlTIi0xdcFQIFcQKQJcI63W.jpg
